@@ -1,17 +1,9 @@
-<html>
-<head>
-<title>Welcome</title>
-</head>
-<body>
-	<div class="container">
-		<div>
-			<h1>Welcome to the deepweb</h1>
-		</div>
-		<div>Your Name:${name}</div>
-		<div>Your Password:${password}</div>
-		<div>
-			<a href="list-todos">Manage</a> your todos
-		</div>
-	</div>
-</body>
-</html>
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>	
+
+<div class="container">
+	<h1>Welcome ${name}</h1>
+	<a href="list-todos">Manage</a> your todos
+</div>
+
+<%@ include file="common/footer.jspf" %>
