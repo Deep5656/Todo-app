@@ -18,11 +18,16 @@
 			<form:input type="text" path="targetDate" required="required"/>
 			<form:errors path="targetDate" cssClass="text-warning"/>
 		</fieldset>
-
+		
 		
 		<form:input type="hidden" path="id"/>
+		
+		<fieldset class="mb-3">				
+			<form:label path="done">Done(T/F)</form:label>
+			<form:input type="text" path="done" required="required"/>
+			<form:errors path="done" cssClass="text-warning"/>
+		</fieldset>
 
-		<form:input type="hidden" path="done"/>
 
 		<input type="submit" class="btn btn-success"/>
 	
